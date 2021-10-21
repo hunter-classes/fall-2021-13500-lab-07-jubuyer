@@ -5,7 +5,7 @@
 #include "unindent.h"
 
 /*
-TESTING 
+TESTING
 
 int main() {
   std::cout << unindent("bad-code.cpp") << '\n';
@@ -24,7 +24,7 @@ std::string unindent(std::string in) {
   file.open(in);
   if (file.is_open()) {
     while(getline(file, input)) {
-      output += removeLeadingSpaces(input); 
+      output += removeLeadingSpaces(input);
       output += '\n';
     }
 
