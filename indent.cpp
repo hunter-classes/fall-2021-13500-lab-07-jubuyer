@@ -1,12 +1,8 @@
 #include <iostream>
 #include <cctype>
 #include <string>
-//#include "indent.h"
-//#include "unindent.h"
-
-bool instanceChar(std::string line, char c);
-int countChar(std::string line, char c);
-std::string removeLeadingSpaces(std::string line);
+#include "indent.h"
+#include "unindent.h"
 
 int main() {
 	std::string input;
