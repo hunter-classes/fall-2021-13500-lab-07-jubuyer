@@ -1,6 +1,6 @@
 #targets
 main: main.o unindent.o indent.o
-	g++ -Wall -o main.o unindent.o indent.o
+	g++ -Wall -o main main.o unindent.o indent.o
 
 main.o: main.cpp unindent.h indent.h
 	g++ -Wall -c main.cpp
