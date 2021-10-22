@@ -3,8 +3,6 @@
 #include <cctype>
 #include <string>
 #include "indent.h"
-#include "unindent.h"
-
 
 /*
 TESTING
@@ -29,7 +27,7 @@ std::string indent(std::string in) {
 
 	if (file.is_open()) {
 		while (getline(file, input)) {
-			input = removeLeadingSpaces(input);
+			input = removeIndents(input);
 
 			if (input[0] == '}') {
 				tabs--;
@@ -103,7 +101,7 @@ int countChar(std::string line, char c) {
 	return occurence;
 }
 
-std::string removeLeadingSpaces(std::string line) {
+std::string removeIndents(std::string line) {
   std::string output = "";
   int len = line.length();
   int spaces = 0;
