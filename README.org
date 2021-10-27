@@ -1,10 +1,10 @@
 * Fall 2021 - Lab 07
 
-* Last name:
+* Last name: Ahmed
 
-* First name:
+* First name: Jubayer
 
-* GitHub username:
+* GitHub username: jubuyer
 
 * Notes:
 
