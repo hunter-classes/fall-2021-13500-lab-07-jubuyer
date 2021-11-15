@@ -76,16 +76,15 @@ std::string indent(std::string in) {
 }
 
 bool instanceChar(std::string line, char c) {
-	bool occurence = false;
 	int len = line.length();
 
 	for (int i = 0; i < len; i++) {
 		if (line[i] == (int)c) {
-			occurence = true;
+			return true;
 		}
 	}
 
-	return occurence;
+	return false;
 }
 
 int countChar(std::string line, char c) {
