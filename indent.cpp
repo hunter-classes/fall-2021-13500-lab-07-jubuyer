@@ -75,6 +75,11 @@ std::string indent(std::string in) {
 	return output;
 }
 
+/*
+Ivan Rao: removed the variable occurence in instanceChar so that the function 
+returns true and false instead of the variable
+*/
+
 bool instanceChar(std::string line, char c) {
 	int len = line.length();
 
